@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SemGuard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7f9fc;
+      color: #182334;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 820px;
+      margin: 80px auto;
+      padding: 40px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+    }
+    h1 { margin: 0; font-size: 48px; }
+    h2 { margin-top: 36px; font-size: 23px; }
+    .subtitle { color: #536176; font-size: 20px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0; }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #174ea6;
+      color: white;
+      text-decoration: none;
+    }
+    .button:hover { background: #103b80; }
+    .button:focus-visible { outline: 3px solid #e8a317; outline-offset: 3px; }
+    code { background: #eef2f7; padding: 3px 6px; border-radius: 4px; }
+    footer { margin-top: 40px; color: #64748b; font-size: 14px; }
+    @media (max-width: 600px) {
+      main { margin: 24px 16px; padding: 24px; }
+      h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SemGuard</h1>
+    <p class="subtitle">Fine-Grained Ship Detection in Remote Sensing Images</p>
+
+    <p>
+      SemGuard combines target–background separation, context regulation
+      and structural feature modeling for fine-grained ship detection.
+    </p>
+
+    <div class="links">
+      <a class="button" href="https://github.com/zytcyz/semguard">
+        GitHub Repository
+      </a>
+      <a class="button"
+         href="https://github.com/zytcyz/semguard/blob/main/cwvib.py">
+        View Code
+      </a>
+      <a class="button" href="./cwvib.py" download="cwvib.py">
+        Download CW-VIB
+      </a>
+    </div>
+
+    <h2>CW-VIB Module</h2>
+    <p>
+      The Causally Weighted Variational Information Bottleneck estimates
+      background-prototype risk from prediction changes and standalone
+      class responses. Risk-weighted compression and gated fusion regulate
+      the contribution of context to target features.
+    </p>
+
+    <h2>Available Code</h2>
+    <p>
+      <code>cwvib.py</code> provides the PyTorch implementation of
+      prototype intervention, variational encoding, weighted KL loss
+      and context fusion. Input formats and a usage example are included
+      in the source file.
+    </p>
+
+    <footer>SemGuard · Research Code</footer>
+  </main>
+</body>
+</html>
